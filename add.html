@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>和風琴のページ</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		header {
+			background-color: #F5DEB3;
+			color: #8B4513;
+			font-size: 2em;
+			font-weight: bold;
+			text-align: center;
+			padding: 20px;
+		}
+
+		nav {
+			background-color: #F5DEB3;
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav a {
+			color: #8B4513;
+			font-size: 1.2em;
+			font-weight: bold;
+			margin: 0 10px;
+			text-decoration: none;
+		}
+
+		section {
+			margin: 20px auto;
+			max-width: 800px;
+			text-align: justify;
+			padding: 0 20px;
+		}
+
+		section h1 {
+			color: #8B4513;
+			font-size: 1.5em;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		section p {
+			font-size: 1.2em;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+
+		section img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			width: 600px;
+		}
+
+		section .zoom {
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		section .zoom:hover {
+			transform: scale(1.2);
+		}
+
+		footer {
+			background-color: #F5DEB3;
+			color: #8B4513;
+			font-size: 0.8em;
+			text-align: center;
+			padding: 20px;
+		}
+
+		footer ul {
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			margin-bottom: 10px;
+		}
+
+		footer ul li {
+			margin: 0 10px;
+		}
+
+		footer ul li a {
+			color: #8B4513;
+			font-size: 0.8em;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		@media screen and (max-width: 600px) {
+			header {
+				font-size: 1.5em;
+			}
+
+			nav a {
+				font-size: 1em;
+			}
+
+			section {
+				padding: 0 10px;
+			}
+
+			section h1 {
+				font-size: 1.2em;
+			}
+
+			section p {
+				font-size: 1em;
+			}
+
+			section img {
+				width: 100%;
+			}
+
+			footer {
+				font-size: 0.6em;
+			}
+		}
+	</style>
+	<script>
+		window.addEventListener("scroll", function() {
+			const topButton = document.getElementById("topButton");
+			if (window 		}
+		else {
+			topButton.style.display = "none";
+		}
+	});
+
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+
+	const zoomImages = document.querySelectorAll(".zoom");
+	zoomImages.forEach(function(img) {
+		img.addEventListener("click", function() {
+			window.open(this.src, "_blank");
+		});
+	});
+</script>
+
+</head>
+<body>
+	<header>和風琴</header>
+	<nav>
+		<a href="#">ホーム</a>
+		<a href="#">琴</a>
+		<a href="#">音楽</a>
+		<a href="#">講師紹介</a>
+	</nav>
+	<section>
+		<h1>琴とは</h1>
+		<p>琴は、古くから日本で親しまれている弦楽器の一つです。弦は四本あり、指で弾いて音を出します。和風の音楽には欠かせない楽器で、幅広い音域を持ちます。</p>
+		<a href="koto.jpg" target="_blank">
+			<img src="koto.jpg" alt="和風琴の画像" class="zoom">
+		</a>
+	</section>
+	<section>
+		<h1>音楽について</h1>
+		<p>和風の音楽は、琴や尺八、三味線などの楽器を使って奏でられます。日本の四季や風景を表現する曲が多く、美しい音色が特徴です。</p>
+		<a href="music.jpg" target="_blank">
+			<img src="music.jpg" alt="和風音楽の画像" class="zoom">
+		</a>
+	</section>
+	<section>
+		<h1>講師紹介</h1>
+		<p>当サイトでは、和風琴の講師を紹介しています。</p>
+		<h2>講師A</h2>
+		<p>講師Aは、和風琴歴20年の経験豊富な講師です。初心者から上級者まで幅広く指導しています。和風琴の音色に魅了され、琴を始めたそうです。</p>
+		<h2>講師B</h2>
+		<p>講師Bは、和風琴演奏家として活躍する講師です。現在も多くのコンサートやイベントに出演しています。独自の演奏スタイルやアレンジで、幅広い層から支持されています。</p>
+		<h2>講師C</h2>
+		<p>講師Cは、和風音楽家として活躍する講師です。和風音楽の演奏や作曲など幅広い分野で活動しています。和風琴だけでなく、尺八や三味線などの楽器も演奏します。</p>
+</section>
+<footer>
+<ul>
+<li><a href="#">利用規約</a></li>
+<li><a href="#">プライバシーポリシー</a></li>
+</ul>
+<p>和風琴のページ © 2021</p>
+</footer>
+<button onclick="topFunction()" id="topButton" title="ページトップへ戻る">Top</button>
+
+</body>
+</html>
+```
+
